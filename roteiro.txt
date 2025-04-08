@@ -1,0 +1,110 @@
+
+🧩 Módulo 1: Configuração do Projeto
+Objetivo: Preparar o ambiente inicial.
+
+ Criar projeto com Vite + React + TypeScript
+
+ Instalar e configurar TailwindCSS
+
+ Configurar rotas com React Router DOM
+
+ Configurar Lazy Loading nas rotas
+
+ Preparar estrutura de pastas (ex: components, pages, services, types, hooks)
+
+ Criar o projeto no GitHub e subir a base inicial
+
+🧩 Módulo 2: Integração com a API
+Objetivo: Criar camada de comunicação com a API.
+
+ Analisar os endpoints disponíveis na documentação do Swagger
+
+ Criar um api.ts com Axios (ou Fetch) configurado
+
+ Criar funções para:
+
+ Buscar desaparecidos
+
+ Buscar detalhes de um desaparecido
+
+ Enviar informações sobre o desaparecido
+
+🧩 Módulo 3: Página Inicial (Listagem)
+Objetivo: Exibir os desaparecidos/localizados
+
+ Criar componente CardDesaparecido
+
+ Criar página Home que consome a API
+
+ Exibir os cards paginados (10 por vez)
+
+ Adicionar filtro/pesquisa conforme opções da API
+
+ Layout responsivo com Tailwind
+
+🧩 Módulo 4: Página de Detalhamento
+Objetivo: Exibir informações completas do desaparecido
+
+ Criar página de detalhes (/detalhes/:id)
+
+ Exibir todos os campos retornados pela API
+
+ Destacar a situação (Desaparecido/Localizado) com cores ou estilo
+
+ Adicionar botão “Enviar informações”
+
+🧩 Módulo 5: Página de Envio de Informações
+Objetivo: Formulário para cidadão enviar informações
+
+ Criar formulário com:
+
+ Nome do cidadão
+
+ Local onde viu
+
+ Campo de texto livre
+
+ Upload de foto
+
+ Aplicar máscaras se necessário (ex: telefone)
+
+ Validar campos obrigatórios
+
+ Enviar os dados via API
+
+ Feedback de envio (sucesso/erro)
+
+🧩 Módulo 6: Responsividade & Estética
+Objetivo: Garantir um visual limpo e adaptável
+
+ Revisar uso do Tailwind em todos os componentes
+
+ Testar visual em dispositivos móveis e tablets
+
+ Ajustar cores, espaçamentos, fontes e contrastes
+
+🧩 Módulo 7: Dockerização
+Objetivo: Containerizar o projeto
+
+ Criar Dockerfile com todas as dependências
+
+ Criar docker-compose.yml se necessário
+
+ Garantir que a aplicação rode com docker compose up
+
+🧩 Módulo 8: Finalização e README
+Objetivo: Preparar entrega final
+
+ Criar README.md com:
+
+ Dados de inscrição
+
+ Instruções para rodar localmente e via Docker
+
+ Tecnologias usadas
+
+ Subir tudo para o GitHub (público)
+
+ Garantir que todos os commits estejam feitos antes do prazo final
+
+Se quiser, posso começar contigo pelo Módulo 1 agora mesmo. Que tal? Você prefere começar pelo Vite com React ou Next.js?
