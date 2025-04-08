@@ -1,10 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import CardPessoa from "../components/Cards";
 import Header from "../components/Header";
 
 const Home: React.FC = () => {
   const [loading, setLoading] = useState(true);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [person, setPerson] = useState<any[]>([]);
 
   useEffect(() => {
@@ -151,21 +151,21 @@ const Home: React.FC = () => {
             <input
               type="text"
               placeholder="Nome"
-              className="flex-1 px-4 py-2 rounded-md text-white border border-gray-300"
+              className="w-full flex-1 px-4 py-2 rounded-md text-white border border-gray-300"
             />
             <input
               type="text"
               placeholder="Cidade"
-              className="flex-1 px-4 py-2 rounded-md text-white border border-gray-300"
+              className="w-full flex-1 px-4 py-2 rounded-md text-white border border-gray-300"
             />
-            <select className="flex-1 px-4 py-2 rounded-md text-white border border-gray-300 ">
+            <select className="w-full flex-1 px-4 py-2 rounded-md text-white border border-gray-300 ">
               <option defaultValue="todas">Todas</option>
               <option value="desaparecido">Desaparecido</option>
               <option value="encontrado">Encontrado</option>
             </select>
             <button
               type="submit"
-              className="px-6 py-2 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition"
+              className="w-full flex-1 px-6 py-2 bg-orange-600 text-white rounded-md hover:bg-orange-700 transition"
             >
               Buscar
             </button>
