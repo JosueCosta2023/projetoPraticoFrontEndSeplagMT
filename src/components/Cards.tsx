@@ -37,6 +37,7 @@ const CardPessoa: React.FC<CardPessoaProps> = ({
         </span>
         <Link
           to={`/detalhes/${id}`}
+          aria-label="Botao de Detalhes do desaparecido"
           state={{id, nome, cidade, status, resumo,imagem, dataUltimoContato}}
           className=" inline-block p-1 bg-blue-500 text-white text-sm px-4 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
         >

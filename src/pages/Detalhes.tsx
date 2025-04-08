@@ -23,6 +23,7 @@ function Detalhes() {
           <div className="mt-6 flex flex-col sm:flex-row gap-4">
             <Link
               to="../"
+              aria-label="Botão para retonar a pagina inicial"
               className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition"
             >
               Retornar à página inicial
@@ -37,11 +38,11 @@ function Detalhes() {
   return (
     <>
       <Header />
-      <main className="max-w-4xl mx-auto p-4 flex flex-col gap-6">
+      <main role="main" className="max-w-4xl mx-auto p-4 flex flex-col gap-6">
         <div className="rounded-xl overflow-hidden shadow-md ">
           <img
             src={imagem}
-            alt={nome}
+            alt={`Foto de ${nome} desaparecido em ${cidade}`}
             className="w-full h-80 object-cover object-center"
           />
         </div>
@@ -75,12 +76,14 @@ function Detalhes() {
                 to={`https://wa.me/5599999999999?text=Olá,%20gostaria%20de%20ajudar%20com%20informações%20sobre%20${nome}`}
                 className="inline-block px-6 py-3 bg-green-500 text-white font-medium rounded-lg hover:bg-white hover:text-green-500 transition text-center"
                 target="_blank"
+                aria-label="Botão para entrar em contato via whatsapp"
               >
                 Entrar em Contato
               </Link>
 
               <button
                 onClick={() => setModalAberto(true)}
+                aria-label="Botão para enviar informações sobre a pessoa"
                 className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-white hover:text-orange-500"
               >
                 Enviar informações
@@ -95,6 +98,7 @@ function Detalhes() {
 
               <Link
                 to="../"
+                aria-label="Botão para retornar a pagina inicial"
                 className="inline-block px-6 py-3 bg-orange-600 text-white font-medium rounded-lg hover:bg-white hover:text-orange-600 transition text-center"
               >
                 Retornar à página inicial

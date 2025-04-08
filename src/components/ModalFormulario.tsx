@@ -35,7 +35,7 @@ const ModalFormulario: React.FC<ModalFormularioProps> = ({ isOpen, onClose, nome
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block font-medium">Nome</label>
+            <label className="block font-medium">Nome do Desaparecido</label>
             <input
               type="text"
               value={nome}
@@ -46,7 +46,7 @@ const ModalFormulario: React.FC<ModalFormularioProps> = ({ isOpen, onClose, nome
           </div>
 
           <div>
-            <label className="block font-medium">Cidade</label>
+            <label className="block font-medium">Ultima cidade que esteve</label>
             <input
               type="text"
               value={cidade}

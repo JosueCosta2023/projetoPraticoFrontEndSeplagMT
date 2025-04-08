@@ -2,7 +2,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-900 text-white px-6 py-10 mt-20">
+    <footer role="contentInfo" className="bg-zinc-900 text-white px-6 py-10 mt-20">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         
         {/* Logo / Nome do projeto */}
