@@ -43,7 +43,7 @@ function Detalhes() {
           />
         </div>
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <h1 className="text-3xl font-bold text-gray-800">{nome}</h1>
+          <h1 className="text-3xl font-bold text-gray-800">#{id}- {nome}</h1>
           <span
             className={`px-4 py-2 rounded-full text-white text-sm font-semibold w-fit ${
               status === "desaparecido" ? "bg-red-600" : "bg-green-600"
