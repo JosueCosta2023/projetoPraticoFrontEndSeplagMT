@@ -144,8 +144,6 @@ const Home: React.FC = () => {
       <Header />
       <div className="w-screen bg-zinc-900 text-white flex justify-center px-4 py-10">
         <div className="w-full max-w-6xl flex flex-col items-center justify-center">
-          {/* Header */}
-
           {/* Formulário */}
           <form className="w-full flex flex-col md:flex-row items-center justify-center gap-4 bg-white p-6 rounded-md shadow-md">
             <input

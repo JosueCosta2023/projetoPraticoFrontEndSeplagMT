@@ -70,18 +70,11 @@ function Detalhes() {
             <div className="mt-6 flex flex-col justify-around sm:flex-row gap-4">
               <Link
                 to={`https://wa.me/5599999999999?text=Olá,%20gostaria%20de%20ajudar%20com%20informações%20sobre%20${nome}`}
-                className="inline-block px-6 py-3 bg-green-500 text-white font-medium rounded-lg hover:bg-white hover:text-green-500 transition"
+                className="inline-block px-6 py-3 bg-green-500 text-white font-medium rounded-lg hover:bg-white hover:text-green-500 transition text-center"
                 target="_blank"
               >
                 Entrar em Contato
               </Link>
-              {/* <Link
-                to={`https://wa.me/5599999999999?text=Olá,%20gostaria%20de%20ajudar%20com%20informações%20sobre%20${nome}`}
-                className="inline-block px-6 py-3 bg-blue-500 text-white font-medium rounded-lg hover:bg-white hover:text-blue-500 transition"
-                target="_blank"
-              >
-                Enviar Mais Informações
-              </Link> */}
 
               <button
                 onClick={() => setModalAberto(true)}
@@ -99,7 +92,7 @@ function Detalhes() {
 
               <Link
                 to="../"
-                className="inline-block px-6 py-3 bg-orange-600 text-white font-medium rounded-lg hover:bg-white hover:text-orange-600 transition "
+                className="inline-block px-6 py-3 bg-orange-600 text-white font-medium rounded-lg hover:bg-white hover:text-orange-600 transition text-center"
               >
                 Retornar à página inicial
               </Link>
