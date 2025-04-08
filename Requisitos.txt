@@ -1,0 +1,65 @@
+ANEXO IV
+PROJETO PRÁTICO IMPLEMENTAÇÃO FRONT-END
+
+
+O projeto prático deverá ser entregue por todos os candidatos para o perfil
+de Desenvolvedor Front-end.
+
+Neste projeto você deverá implementar uma aplicação Single Page
+Application baseada em Javascript, preferencialmente utilizando a
+linguagem de acordo com o perfil profissional escolhido, conforme os
+requisitos a seguir:
+
+A Polícia Judiciária Civil de Mato Grosso oferece acesso ao cidadão uma API
+de pessoas desaparecidas. Para este teste você deverá implementar uma
+aplicação que possibilita consultar dados dessas pessoas desaparecidas
+bem como enviar eventuais informações sobre elas. Os endpoints estão
+documentados no seguinte link swagger: https://abitus-api.geia.vip/
+swagger-ui/index.html
+Pré-Requisitos:
+● Antes de iniciar a realização do teste prático realize a leitura
+deste documento até o final.
+● Os dados da API devem ser requisitados em tempo real
+(Usando axios, fetch ou sua biblioteca de preferência);
+● Componentizar adequadamente a solução;
+● Layout responsivo levando em consideração os principais
+tamanhos de tela;
+● Caso use algum framework CSS, priorizar a utilização do
+Tailwind;
+● Disponibilizar o projeto em conta do github.
+Requisitos Gerais:
+● Deverá usar Lazy Loading Routes;
+● Atentar para criar um design limpo e organizado;
+● O artefato final deverá ser empacotado em container com todos
+os componentes necessários, como bibliotecas, frameworks e outras
+dependências, para que fiquem isolados em seu próprio “container”.
+Requisitos Específicos:
+1) Tela inicial
+a) Listar desaparecidos ou localizados conforme a situação em
+cards, contendo imagem e informações sobre o caso;
+b) Paginar o resultado da consulta de forma a exibir pelo menos 10
+desaparecidos por vez.
+c) Possibilitar pesquisas conforme possibilidade do endpoint;
+2) Tela de Detalhamento do Desaparecido
+a) Na tela principal ao clicar em um desaparecido a aplicação
+deverá redirecionar para uma tela de detalhamento onde outros dados do
+desaparecido serão exibidos.
+b) Estilize a tela para que seja dado destaque a situação da
+pessoa, se desaparecido ou localizado.
+3) Tela de Inclusão de Informações
+a) Na tela de detalhamento do desaparecido deverá ser incluído
+um botão para que o cidadão possa enviar informações sobre a pessoa
+desaparecida, caso eventualmente possua;
+b) Nesta tela o cidadão deverá aplicar máscaras de formatação
+quando necessário, indicar a localização onde eventualmente viu o
+desaparecido e possibilitar o envio de fotografias.
+Instruções
+● O projeto deverá estar disponível Github de forma pública para
+fins de análise;
+○ Crie um arquivo README.md contendo seus dados de inscrição
+bem como orientações de como executar e testar a solução apresentada.
+○ Decorrido o prazo de entrega, nenhum outro commit deverá ser
+enviado ao repositório do projeto.
+● Adicione as dependências que considerar necessárias;
+● Deverá estar disponível no repositório de versionamento todos
+os arquivos e scripts utilizados para a solução.
