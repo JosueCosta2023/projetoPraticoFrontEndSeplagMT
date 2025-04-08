@@ -12,14 +12,14 @@ const Footer = () => {
         </div>
 
         {/* Redes sociais */}
-        <div className="flex gap-4 text-xl">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition text-white">
+        <div role="navigation" className="flex gap-4 text-xl">
+          <a href="https://facebook.com" aria-label="Acesso ao facebook" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition text-white">
             <FaFacebookF />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition text-white">
+          <a href="https://twitter.com" aria-label="Acesso ao X" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition text-white">
             <FaTwitter />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition text-white">
+          <a href="https://instagram.com" aria-label="Acesso ao Instagram" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition text-white">
             <FaInstagram />
           </a>
         </div>
