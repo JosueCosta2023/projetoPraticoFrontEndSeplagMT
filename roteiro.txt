@@ -2,17 +2,17 @@
 🧩 Módulo 1: Configuração do Projeto
 Objetivo: Preparar o ambiente inicial.
 
- Criar projeto com Vite + React + TypeScript
+ Criar projeto com Vite + React + TypeScript - ok
 
- Instalar e configurar TailwindCSS
+ Instalar e configurar TailwindCSS - ok
 
- Configurar rotas com React Router DOM
+ Configurar rotas com React Router DOM  - ok
 
- Configurar Lazy Loading nas rotas
+ Configurar Lazy Loading nas rotas  -ok 
 
- Preparar estrutura de pastas (ex: components, pages, services, types, hooks)
+ Preparar estrutura de pastas (ex: components, pages, services, types, hooks) - ok
 
- Criar o projeto no GitHub e subir a base inicial
+ Criar o projeto no GitHub e subir a base inicial  - ok
 
 🧩 Módulo 2: Integração com a API
 Objetivo: Criar camada de comunicação com a API.
