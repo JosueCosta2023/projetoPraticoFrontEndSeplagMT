@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import CardPessoa from "../components/Cards";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -8,6 +9,7 @@ const Home: React.FC = () => {
   const [person, setPerson] = useState<any[]>([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0); // 👈 Leva para o topo da página
     const timer = setTimeout(() => {
       const pessoas = [
         {
@@ -170,7 +172,6 @@ const Home: React.FC = () => {
           </form>
         </div>
       </div>
-
       <div className="min-h-screen p-8 bg-gray-100 flex flex-col items-center">
         {loading ? (
           <div className="text-orange-600 font-semibold text-lg animate-pulse">
@@ -187,6 +188,7 @@ const Home: React.FC = () => {
           </>
         )}
       </div>
+      <Footer/>
     </>
   );
 };

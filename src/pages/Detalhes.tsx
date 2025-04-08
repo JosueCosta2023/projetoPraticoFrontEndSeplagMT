@@ -2,8 +2,10 @@ import { Link, useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import { useState } from "react";
 import ModalFormulario from "../components/ModalFormulario";
+import Footer from "../components/Footer";
 
 function Detalhes() {
+  window.scrollTo(0, 0); // 👈 Leva para o topo da página
   const location = useLocation();
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { id, nome, cidade, status, dataUltimoContato, resumo, imagem } =
@@ -27,6 +29,7 @@ function Detalhes() {
             </Link>
           </div>
         </div>
+        <Footer/>
       </>
     );
   }
@@ -78,7 +81,7 @@ function Detalhes() {
 
               <button
                 onClick={() => setModalAberto(true)}
-                className="bg-yellow-500 text-white px-6 py-2 rounded-xl hover:bg-yellow-600"
+                className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-white hover:text-orange-500"
               >
                 Enviar informações
               </button>
@@ -112,6 +115,7 @@ function Detalhes() {
           </>
         )}
       </main>
+      <Footer/>
     </>
   );
 }
