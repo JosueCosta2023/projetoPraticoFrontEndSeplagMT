@@ -76,19 +76,19 @@ const Home: React.FC = () => {
               placeholder="Nome"
               aria-label="Digite o nome da pessoa desaparecida"
               onChange={(e) => setFiltroNome(e.target.value)}
-              className="w-full flex-1 px-4 py-2 rounded-md text-white border border-gray-300"
+              className="w-full bg-black flex-1 px-4 py-2 rounded-md text-white border border-gray-300"
             />
             <input
               type="text"
               placeholder="Cidade"
               onChange={(e) => setFiltroCidade(e.target.value)}
               aria-label="Digita a cidade onde esta pessoa desapareceu"
-              className="w-full flex-1 px-4 py-2 rounded-md text-white border border-gray-300"
+              className="w-full flex-1 px-4 py-2 rounded-md text-white border bg-black border-gray-300"
             />
             <select
               value={filtroStatus}
               onChange={(e) => setFiltroStatus(e.target.value)}
-              className="w-full flex-1 px-4 py-2 rounded-md text-white border border-gray-300 "
+              className="w-full flex-1 px-4 py-2 rounded-md text-white border bg-black border-gray-300 "
               aria-label="Filtrar pessoas por status"
             >
               <option value="todas">Todas</option>
