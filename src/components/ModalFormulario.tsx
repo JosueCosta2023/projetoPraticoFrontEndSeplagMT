@@ -26,7 +26,7 @@ const ModalFormulario: React.FC<ModalFormularioProps> = ({ isOpen, onClose, nome
       <div className="bg-white rounded-xl p-6 max-w-lg w-full shadow-lg relative">
         <button
           onClick={onClose}
-          className="absolute top-2 right-3 text-gray-500 hover:text-red-500 text-xl font-bold"
+          className="absolute top-2 right-3 text-gray-500 hover:text-red-500 text-lg font-bold"
         >
           &times;
         </button>
@@ -81,13 +81,14 @@ const ModalFormulario: React.FC<ModalFormularioProps> = ({ isOpen, onClose, nome
               value={mensagem}
               onChange={(e) => setMensagem(e.target.value)}
               required
-              className="w-full border text-white rounded-lg p-2 min-h-[100px]"
+              className="w-full border text-black rounded-lg resize-none bg-gray-100 p-2 min-h-[100px]"
               placeholder="Digite aqui o que sabe..."
             />
           </div>
 
           <div>
             <label className="block font-medium mb-2">Imagem (opcional)</label>
+            <i className="text-sm mb-2 inline-block text-gray-300">Você pode enviar apenas 1 arquivo e somente em formato png.</i>
             <input
               type="file"
               accept="image/*"

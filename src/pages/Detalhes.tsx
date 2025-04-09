@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 function Detalhes() {
   window.scrollTo(0, 0); // 👈 Leva para o topo da página
   const location = useLocation();
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
   const { id, nome, cidade, status, dataUltimoContato, resumo, imagem } =
     location.state || {};
   const [modalAberto, setModalAberto] = useState(false);
@@ -24,13 +24,13 @@ function Detalhes() {
             <Link
               to="../"
               aria-label="Botão para retonar a pagina inicial"
-              className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition"
+              className="inline-block px-6 text-center py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition"
             >
               Retornar à página inicial
             </Link>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </>
     );
   }
@@ -47,7 +47,9 @@ function Detalhes() {
           />
         </div>
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <h1 className="text-3xl font-bold text-gray-800">#{id}- {nome}</h1>
+          <h1 className="text-3xl font-bold text-gray-800">
+            #{id}- {nome}
+          </h1>
           <span
             className={`px-4 py-2 rounded-full text-white text-sm font-semibold w-fit ${
               status === "desaparecido" ? "bg-red-600" : "bg-green-600"
@@ -84,7 +86,7 @@ function Detalhes() {
               <button
                 onClick={() => setModalAberto(true)}
                 aria-label="Botão para enviar informações sobre a pessoa"
-                className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-white hover:text-orange-500"
+                className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-white hover:text-blue-500"
               >
                 Enviar informações
               </button>
@@ -112,14 +114,14 @@ function Detalhes() {
             </div>
             <Link
               to="../"
-              className="inline-block px-6 py-3 bg-orange-600 align-center text-white font-medium rounded-lg hover:bg-white hover:text-orange-600 transition "
+              className="inline-block px-6 py-3 text-center bg-orange-600 align-center text-white font-medium rounded-lg hover:bg-white hover:text-orange-600 transition "
             >
               Retornar à página inicial
             </Link>
           </>
         )}
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }
