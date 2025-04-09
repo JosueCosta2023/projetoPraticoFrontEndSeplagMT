@@ -50,7 +50,7 @@ npm install
 # Inicie o projeto
 npm run dev
  ```
- 
+## Dados estáticos sem integração com api 08/04/2025
  
 ## Author
 ### Josué Ocanha Costa
