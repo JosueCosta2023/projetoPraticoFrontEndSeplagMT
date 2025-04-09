@@ -65,5 +65,5 @@ npm run dev
 
 # "Vida longa e próspera. 🖖🖖🖖"
 Feito com o ❤️ por Josué Ocanha Costa
-## [Acesse o Deploy](https://github.com/JosueCosta2023/projetoPraticoFrontEndSeplagMT)
-### [Acesse o repositório](https://projeto-pratico-front-end-seplag-mt.vercel.app/)
+### [Acesse o Repositorio](https://github.com/JosueCosta2023/projetoPraticoFrontEndSeplagMT)
+### [Acesse o Deploy](https://projeto-pratico-front-end-seplag-mt.vercel.app/)
