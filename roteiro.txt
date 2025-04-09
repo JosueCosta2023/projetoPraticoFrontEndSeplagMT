@@ -1,3 +1,5 @@
+api  https://abitus-api.geia.vip/swagger-ui/index.html#/Autentica%C3%A7%C3%A3o/login
+
 
 🧩 Módulo 1: Configuração do Projeto
 Objetivo: Preparar o ambiente inicial.
