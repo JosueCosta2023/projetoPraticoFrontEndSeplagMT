@@ -21,7 +21,7 @@ const Home: React.FC = () => {
   const [todos, setTodos] = useState<Pessoa[]>([]);
   const [filtroNome, setFiltroNome] = useState("");
   const [filtroCidade, setFiltroCidade] = useState("");
-  const [filtroStatus, setFiltroStatus] = useState("");
+  const [filtroStatus, setFiltroStatus] = useState("todas");
 
   useEffect(() => {
     window.scrollTo(0, 0); // 👈 Leva para o topo da página
@@ -49,6 +49,8 @@ const Home: React.FC = () => {
       const statusMatch =
         filtroStatus === "todas" ||
         person.status.toLowerCase() === filtroStatus.toLocaleLowerCase();
+
+        console.log(statusMatch)
 
       return nomeMatch && cidadeMatch && statusMatch;
     });
@@ -117,8 +119,8 @@ const Home: React.FC = () => {
                   <CardPessoa key={index} {...pessoa} />
                 ))
               ) : (
-                <p className="text-gray-700">
-                  Nenhum caso encontrado nos filtros atuais
+                <p className="text-orange-600 font-semibold text-lg animate-pulse ml-[-30px] w-screen text-center">
+                  Nenhum caso encontrado nos filtros atuais...
                 </p>
               )}
             </div>
