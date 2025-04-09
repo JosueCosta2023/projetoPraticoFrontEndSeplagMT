@@ -83,7 +83,7 @@ const ModalFormulario: React.FC<ModalFormularioProps> = ({ isOpen, onClose, nome
               value={mensagem}
               onChange={(e) => setMensagem(e.target.value)}
               required
-              className="w-full border text-black rounded-lg resize-none bg-black text-white p-2 min-h-[100px]"
+              className="w-full border rounded-lg resize-none bg-black text-white p-2 min-h-[100px]"
               placeholder="Digite aqui o que sabe..."
             />
           </div>
