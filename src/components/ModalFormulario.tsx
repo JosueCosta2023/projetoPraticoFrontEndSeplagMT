@@ -41,7 +41,7 @@ const ModalFormulario: React.FC<ModalFormularioProps> = ({ isOpen, onClose, nome
               value={nome}
               readOnly
               disabled
-              className="w-full border rounded-lg p-2 bg-gray-100"
+              className="w-full text-gray-600 border rounded-lg p-2 bg-black"
             />
           </div>
 
@@ -52,7 +52,7 @@ const ModalFormulario: React.FC<ModalFormularioProps> = ({ isOpen, onClose, nome
               value={cidade}
               readOnly
               disabled
-              className="w-full text-black border rounded-lg p-2 bg-gray-100"
+              className="w-full text-gray-600 border rounded-lg p-2 bg-black"
             />
           </div>
           <div>
@@ -61,7 +61,8 @@ const ModalFormulario: React.FC<ModalFormularioProps> = ({ isOpen, onClose, nome
               type="text"
               name="nomeUsuario"
               required
-              className="w-full text-black border rounded-lg p-2 bg-gray-100"
+              placeholder="Nome Completo"
+              className="w-full text-white border rounded-lg p-2 bg-black"
             />
           </div>
 
@@ -71,7 +72,8 @@ const ModalFormulario: React.FC<ModalFormularioProps> = ({ isOpen, onClose, nome
               type="email"
               name="emailUsuario"
               required
-              className="w-full border rounded-lg p-2 bg-gray-100"
+              placeholder="Seu melhor E-mail"
+              className="w-full border text-white rounded-lg p-2 bg-black"
             />
           </div>
 
@@ -81,7 +83,7 @@ const ModalFormulario: React.FC<ModalFormularioProps> = ({ isOpen, onClose, nome
               value={mensagem}
               onChange={(e) => setMensagem(e.target.value)}
               required
-              className="w-full border text-black rounded-lg resize-none bg-gray-100 p-2 min-h-[100px]"
+              className="w-full border text-black rounded-lg resize-none bg-black text-white p-2 min-h-[100px]"
               placeholder="Digite aqui o que sabe..."
             />
           </div>
